@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.row{
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.w-30{
+    width: 30%;
+}
+.w-70{
+    width: 70%;
+}
+.col{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.line{
+    width: 45px;
+    border-bottom: 2px solid #ef6d10;
+    padding-top: 4px;
+}
+.content{
+    padding-top: 20px;
+}
+.wrap{
+    padding: 15px 0;
+    color: #757575;
+}
+.wrap > i {
+    width: 10%;
+}
+i{
+    font-size: 24px!important;
+}
+.form{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+input, textarea{
+    margin-bottom: 15px;
+    padding-left: 12px;
+}
+input{
+    height: 36px;
+}
+button{
+    height: 36px;
+    width: 120px;
+    color: #fff;
+    border: none;
+    background: rgb(22, 211, 148);
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .row{
+        flex-wrap: wrap;
+    }
+    .wrap{
+        flex-wrap: nowrap!important;
+    }
+    .w-30{
+        width: 100%;
+    }
+    .w-70{
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .row{
+        flex-wrap: wrap;
+    }
+    .wrap{
+        flex-wrap: nowrap!important;
+    }
+    .w-30{
+        width: 100%;
+    }
+    .w-70{
+        width: 100%;
+    }
+}
